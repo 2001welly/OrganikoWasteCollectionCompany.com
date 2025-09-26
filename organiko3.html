@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Organiko — Reliable Trash Collection in Harare</title>
+  <style>
+    :root{
+      --green:#2b7a4b;
+      --muted:#f6f3ee;
+      --text:#123; 
+      --card:#ffffff;
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--muted);color:var(--text);line-height:1.4}
+
+    /* NAV */
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;background:transparent}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{font-weight:700;color:var(--green);font-size:22px;letter-spacing:1px}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .nav-links a{color:var(--text);text-decoration:none;font-weight:500}
+    .btn-book{background:var(--green);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 28px}
+    .hero-card{background:transparent;padding:12px}
+    h1{font-size:48px;margin:0 0 12px;color:var(--text)}
+    p.lead{margin:0 0 20px;color:#2d3b35;opacity:0.9}
+
+    .hero-cta{display:flex;gap:12px;align-items:center}
+    .btn-primary{background:var(--green);color:white;padding:14px 18px;border-radius:12px;border:none;font-weight:700;text-decoration:none;display:inline-block}
+    .btn-secondary{background:transparent;color:var(--text);padding:12px 14px;border-radius:10px;border:2px solid rgba(0,0,0,0.06);cursor:pointer;text-decoration:none}
+
+    .hero-image{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 20px rgba(16,24,32,0.08)}
+    .hero-image img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* SERVICES */
+    .services{display:flex;gap:18px;justify-content:space-between;padding:28px;margin:0 28px}
+    .service{flex:1;background:var(--card);padding:20px;border-radius:12px;display:flex;gap:12px;align-items:center;box-shadow:0 6px 18px rgba(16,24,32,0.04)}
+    .service svg{width:42px;height:42px;flex-shrink:0}
+    .service h4{margin:0;font-size:16px}
+    .service p{margin:4px 0 0;color:#4a5a4f;font-size:14px}
+
+    /* FOOTER */
+    footer{padding:28px;background:transparent;margin-top:28px}
+
+    /* WHATSAPP FLOAT */
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.15)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;gap:20px;padding:24px}
+      h1{font-size:34px}
+      .services{flex-direction:column}
+      .nav{padding:12px 16px}
+      .hero-image{height:260px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo">ORGANIKO</div>
+      <div style="font-size:13px;color:#5a6a60">Trash collection • Harare</div>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <!-- Changed to WhatsApp -->
+      <a href="https://wa.me/263788722455?text=Hello%20Organiko!%20I%20would%20like%20to%20book%20a%20trash%20collection." 
+         class="btn-book" target="_blank">Book a Collection</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-card">
+      <h1>Reliable Trash Collection in Harare</h1>
+      <p class="lead">Organiko provides efficient and eco-friendly waste collection services to households and businesses across Harare. Book one-off pickups or schedule regular collections.</p>
+      <div class="hero-cta">
+        <!-- Changed to WhatsApp -->
+        <a href="https://wa.me/263788722455?text=Hello%20Organiko!%20I%20would%20like%20to%20book%20a%20trash%20collection." 
+           class="btn-primary" target="_blank">Book a Collection</a>
+        <a class="btn-secondary" href="#services">Our Services</a>
+      </div>
+      <div style="margin-top:20px;color:#4b5a50">Payment options: EcoCash • Bank transfer </div>
+    </div>
+
+    <div class="hero-image" role="img" aria-label="Workers collecting trash with a green bin">
+      <img src="organiko.jpg" alt="Organiko team collecting trash" 
+        onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=800 height=520><rect width=\'100%\' height=\'100%\' fill=\'%23e9ede8\'/><text x=50% y=50% dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=20 fill=\'%23888\'>Organiko hero image placeholder</text></svg>'">
+    </div>
+  </header>
+
+  <section id="services" class="services">
+    <div class="service">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18M8 7v12m8-12v12M5 7l1-4h12l1 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <h4>Household Trash Collection</h4>
+        <p>Weekly or one-off pickups for residential waste.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18M16 7v12M8 7v12M5 7l1-4h12l1 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <h4>Business & Office Waste Collection</h4>
+        <p>Scheduled pickups for shops, offices and institutions.</p>
+      </div>
+    </div>
+
+    <div class="service">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11h2l2 6h8l2-6h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <h4>Bulk / One-Time Pickups</h4>
+        <p>Clearance of large waste items or construction debris.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div style="max-width:980px;margin:0 auto;padding:10px 28px;display:flex;justify-content:space-between;align-items:center;gap:14px">
+      <div>
+        <strong>Organiko</strong><br>
+        <small>Serving Harare • Phone: +263 788 722 455 • WhatsApp available</small>
+      </div>
+      <div style="text-align:right">
+        <small>Follow us: @organiko_hre</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp quick link (replace phone number with Organiko's number) -->
+  <a class="whatsapp" href="https://wa.me/263788722455" target="_blank" aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.5 12.2c0 4.1-3.3 7.5-7.4 7.5-1.3 0-2.6-.4-3.6-1.1L5 20l1.2-5.3A7.4 7.4 0 014.7 12.2C4.7 7.9 8.3 4.3 12.6 4.3c3.8 0 6.9 3.1 6.9 6.9z" stroke="#fff" stroke-width="0.8" fill="#fff" opacity="0.15"/><path d="M17.6 14.1c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.1.2-.3.3-.6.1-1.6-.8-2.6-1.6-3.6-3-.3-.4 0-.6.2-.8.2-.2.3-.3.5-.5.2-.2.3-.4.5-.6.2-.2.1-.4 0-.6-.1-.2-.7-1.6-.9-2.1-.2-.5-.4-.5-.6-.5-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.2.2 2.1 3.2 5.2 4.5 3.1 1.3 3.1.9 3.7.9.6 0 1.9-.8 2.1-1.6.2-.8.2-1.6.1-1.8-.1-.2-.3-.3-.6-.5z" fill="#fff"/></svg>
+  </a>
+</body>
+</html>
